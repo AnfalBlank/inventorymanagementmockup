@@ -26,17 +26,21 @@ Project ini adalah **mockup frontend** yang merepresentasikan seluruh halaman da
 
 ```
 inventorymanagement/
-├── frontend/              # Next.js 16 + TailwindCSS frontend
-│   ├── src/
-│   │   ├── app/          # 22 halaman (App Router)
-│   │   ├── components/   # UI components & layout
-│   │   ├── store/        # Zustand state + mock data
-│   │   ├── lib/          # Utilities & design tokens
-│   │   └── types/        # TypeScript definitions
-│   ├── DEMO-GUIDE.md     # Panduan presentasi demo
-│   └── README.md         # Frontend-specific docs
-├── prd.md                # Product Requirements Document
-├── DESIGN (1).md         # Design system reference (Cohere-inspired)
+├── src/
+│   ├── app/              # 22 halaman (Next.js App Router)
+│   ├── components/       # UI components & layout
+│   ├── store/            # Zustand state + mock data
+│   ├── lib/              # Utilities & design tokens
+│   └── types/            # TypeScript definitions
+├── public/               # Static assets
+├── docs/                 # Documentation
+│   ├── prd.md            # Product Requirements Document
+│   ├── DESIGN.md         # Design system reference
+│   ├── ARCHITECTURE.md   # Technical architecture
+│   ├── CONTRIBUTING.md   # Contribution guidelines
+│   └── DEMO-GUIDE.md     # Demo presentation guide
+├── package.json          # Dependencies & scripts
+├── next.config.ts        # Next.js configuration
 └── README.md             # This file
 ```
 
@@ -52,7 +56,6 @@ inventorymanagement/
 ### Run Frontend
 
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
@@ -64,7 +67,6 @@ Buka [http://localhost:3000](http://localhost:3000) — akan otomatis redirect k
 ### Build for Production
 
 ```bash
-cd frontend
 npm run build
 npm start
 ```
@@ -304,10 +306,11 @@ src/
 
 ## Documentation
 
-- **[PRD](prd.md)** — Product Requirements Document v2.0
-- **[Design Reference](DESIGN%20%281%29.md)** — Cohere-inspired design system spec
-- **[Demo Guide](frontend/DEMO-GUIDE.md)** — Step-by-step presentation walkthrough
-- **[Frontend README](frontend/README.md)** — Next.js specific docs
+- **[PRD](docs/prd.md)** — Product Requirements Document v2.0
+- **[Design Reference](docs/DESIGN.md)** — Cohere-inspired design system spec
+- **[Architecture](docs/ARCHITECTURE.md)** — Technical architecture
+- **[Contributing](docs/CONTRIBUTING.md)** — Contribution guidelines
+- **[Demo Guide](docs/DEMO-GUIDE.md)** — Step-by-step presentation walkthrough
 
 ---
 
