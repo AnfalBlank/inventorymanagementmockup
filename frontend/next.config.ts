@@ -1,10 +1,8 @@
 import type { NextConfig } from "next";
-import path from "node:path";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: path.resolve(__dirname),
-  },
+  // Suppress workspace root warning
+  outputFileTracingRoot: process.cwd(),
 };
 
 export default nextConfig;
