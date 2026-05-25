@@ -30,8 +30,8 @@ export default function LoginPage() {
         <div className="max-w-md w-full mx-auto">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-12">
-            <div className="w-11 h-11 rounded-xl bg-[#003c33] flex items-center justify-center">
-              <Box size={22} className="text-white" />
+            <div className="w-11 h-11 rounded-xl bg-[#003c33] flex items-center justify-center overflow-hidden">
+              <img src="/logo.png" alt="MIMS" className="w-9 h-9 object-contain" />
             </div>
             <div>
               <h1 className="text-base font-semibold text-[#212121] tracking-tight">MIMS</h1>
@@ -149,6 +149,7 @@ export default function LoginPage() {
         </div>
 
         <div className="relative">
+          <img src="/logo.png" alt="MIMS" className="w-12 h-12 object-contain mb-2" />
           <p className="text-xs text-white/60 uppercase tracking-widest font-medium">
             PT. Manggala Utama Indonesia
           </p>
